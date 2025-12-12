@@ -25,7 +25,7 @@ import numpy as np
 
 with st.sidebar:
       escolha= option_menu(
-          "MENU", ["Iniciar","Editar","Salvar","Enviar"],
+          "MENU", ["Iniciar","Editar","cidades","Enviar"],
           menu_icon="cast",
           icons=["house","bar-chart", "search","graph-up-arrow"],
           default_index=0    
@@ -55,7 +55,7 @@ if escolha =="Editar":
      st.pyplot(fig)
           
     
-if escolha =="Salvar":
+if escolha =="cidades":
     st.title("o seu arquivo esta salvo")
     
     # populacao de alguns cidades de europa#
@@ -98,4 +98,5 @@ if escolha =="Enviar":
      
 
      
+
                  
