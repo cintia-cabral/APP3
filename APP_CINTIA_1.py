@@ -25,7 +25,7 @@ import numpy as np
 
 with st.sidebar:
       escolha= option_menu(
-          "MENU", ["Iniciar","Editar","cidades","Enviar"],
+          "MENU", ["Iniciar","Grafico","cidades","Enviar"],
           menu_icon="cast",
           icons=["house","bar-chart", "search","graph-up-arrow"],
           default_index=0    
@@ -39,7 +39,7 @@ if escolha =="Iniciar":
  
 
      
-if escolha =="Editar":
+if escolha =="Grafico":
      st.title("Editando")
      x = np.linspace(-5, 2, 100) 
      y1= x**3 + 5*x**2 + 10
@@ -100,3 +100,4 @@ if escolha =="Enviar":
      
 
                  
+
