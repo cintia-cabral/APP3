@@ -62,12 +62,6 @@ if escolha == "Grafico":
 if escolha == "Cidade":
     st.title("As Quatro Cidades da Europa")
 
-    # População
-    s = pd.Series(
-        [909976, 8615246, 2872086, 2273305],
-        name="populacao",
-        index=["Estocolmo", "Londres", "Roma", "Paris"]
-    )
 
     st.write("Tabela de População")
     st.write(s)
@@ -83,7 +77,7 @@ if escolha == "Cidade":
 
 # MAPA# 
 if escolha == "Mapa":
-    st.title("Mapa das Cidades")
+ st.title("Mapa das Cidades")
 
     dados = {
         "cidade": ["Estocolmo", "Londres", "Roma", "Paris"],
@@ -111,6 +105,7 @@ if escolha == "Enviar":
      
 
                  
+
 
 
 
