@@ -25,7 +25,7 @@ import numpy as np
 
 with st.sidebar:
       escolha= option_menu(
-          "MENU", ["Iniciar","Grafico","cidades","MAPA","enviar"],
+          "MENU", ["Iniciar","Grafico","cidade","Mapa","enviar"],
           menu_icon="cast",
           icons=["house","bar-chart", "search","graph-up-arrow"],
           default_index=0    
@@ -55,7 +55,7 @@ if escolha =="Grafico":
      st.pyplot(fig)
           
     
-if escolha =="Cidades":
+if escolha =="Cidade":
     st.title("Os Quatros Cidades De Europas")
     
     # populacao de alguns cidades de europa#
@@ -73,8 +73,8 @@ if escolha =="Cidades":
     st.write(s.describe())
     st.pyplot(fig)
     
- if escolha =="MAPA":
- st.title("Mapa ds cidades")
+ if escolha =="Mapa":
+     st.title("Mapa ds cidades")
     
     # MAPA DE MUNDO
     # Dados das cidades
@@ -101,6 +101,7 @@ if escolha =="Enviar":
      
 
                  
+
 
 
 
