@@ -17,9 +17,7 @@ import numpy as np
 # TÍTULO PRINCIPAL# 
 st.title("OLA CINTIA CABRAL")
 
-
 # MENU LATERAL#
-
 with st.sidebar:
     escolha = option_menu(
         "MENU", ["Iniciar", "Grafico", "Cidade", "Mapa", "Enviar"],
@@ -28,9 +26,7 @@ with st.sidebar:
         default_index=0
     )
 
-
 # INÍCIO#
-
 if escolha == "Iniciar":
     st.title("Seja Bem Vindo")
     df = pd.DataFrame({"X": [1, 2], "Y": [2, 3]})
@@ -55,13 +51,15 @@ if escolha == "Grafico":
     ax.legend()
     st.pyplot(fig)
 
-
-
 # CIDADE#
-
 if escolha == "Cidade":
     st.title("As Quatro Cidades da Europa")
 
+    s = pd.Series(
+        [909976, 8615246, 2872086, 2273305],
+        name="populacao",
+        index=["Estocolmo", "Londres", "Roma", "Paris"]
+    )
 
     st.write("Tabela de População")
     st.write(s)
@@ -77,7 +75,7 @@ if escolha == "Cidade":
 
 # MAPA# 
 if escolha == "Mapa":
- st.title("Mapa das Cidades")
+    st.title("Mapa das Cidades")
 
     dados = {
         "cidade": ["Estocolmo", "Londres", "Roma", "Paris"],
@@ -93,9 +91,7 @@ if escolha == "Mapa":
     st.subheader("Mapa das Cidades")
     st.map(df, latitude="lat", longitude="lon")
 
-
 # ENVIAR#
-
 if escolha == "Enviar":
     st.title("Enviado com Sucesso!")
 
