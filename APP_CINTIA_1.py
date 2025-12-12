@@ -25,7 +25,7 @@ import numpy as np
 
 with st.sidebar:
       escolha= option_menu(
-          "MENU", ["Iniciar","Grafico","cidade","Mapa","enviar"],
+          "MENU", ["Iniciar","Grafico","cidade","Mapa","Enviar"],
           menu_icon="cast",
           icons=["house","bar-chart", "search","graph-up-arrow"],
           default_index=0    
@@ -101,6 +101,7 @@ if escolha =="Enviar":
      
 
                  
+
 
 
 
